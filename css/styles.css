@@ -1,0 +1,187 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #424242;
+}
+
+header {
+  background-color: #00bcd4;
+  padding: 1em 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease-in-out;
+}
+nav a:hover {
+  color: #4caf50;
+  transform: scale(1.05);
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+h2 {
+  color: #4caf50;
+  text-align: center;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+h2.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contenedor-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 5px solid #00bcd4;
+}
+.foto-perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.foto-perfil:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.habilidad {
+  background-color: #00bcd4;
+  color: #ffffff;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  margin: 0.5em;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+.habilidad:hover {
+  background-color: #4caf50;
+  transform: translateY(-5px);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.entrada-proyecto h3 {
+  transition: color 0.3s ease;
+}
+.entrada-proyecto h3:hover {
+  color: #00bcd4;
+  cursor: pointer;
+}
+
+.botones-contacto {
+  margin-top: 20px;
+}
+.botones-contacto a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.botones-contacto a.btn-wsp {
+  background-color: #4caf50;
+}
+.botones-contacto a.btn-wsp:hover {
+  background-color: rgb(60.5577689243, 139.4422310757, 63.7450199203);
+  transform: scale(1.05);
+}
+.botones-contacto a.btn-email {
+  background-color: #f44336;
+}
+.botones-contacto a.btn-email:hover {
+  background-color: rgb(234.1839622642, 27.9622641509, 12.8160377358);
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #00bcd4;
+  text-align: center;
+  padding: 1em 0;
+  color: #ffffff;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+.botones-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+}
+.botones-contacto a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.botones-contacto a i {
+  font-size: 1.2rem;
+}
+.botones-contacto a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.botones-contacto .btn-wsp {
+  background-color: #25d366;
+}
+.botones-contacto .btn-wsp:hover {
+  background-color: rgb(29.3911290323, 167.6088709677, 81.0241935484);
+}
+.botones-contacto .btn-email {
+  background-color: #ea4335;
+}
+.botones-contacto .btn-email:hover {
+  background-color: rgb(213.7757847534, 37.0403587444, 22.2242152466);
+}
+
+/*# sourceMappingURL=styles.css.map */
